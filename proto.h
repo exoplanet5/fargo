@@ -43,6 +43,7 @@ real ConstructSequence ();
 void InitGasVelocities ();
 void AccreteOntoPlanets ();
 /**H2O**/
+void AccreteOntoBinary();
 void ImprovingPlanetsMass ();
 /**H2O**/
 void FindOrbitalElements ();

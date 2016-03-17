@@ -7,6 +7,7 @@
 #accordingly) FARGO_ARCH must be set to LINUX
 CC_LINUX  = gcc
 OPT_LINUX = -march=pentium -Wall -ffast-math
+OPT_LINUX = -march=x86-64 -Wall -ffast-math
 OPTSEQ_LINUX = 
 PARAOPT_LINUX =
 PARACC_LINUX = mpicc
@@ -14,7 +15,7 @@ PARACC_LINUX = mpicc
 # Intel Linux platform optimized for pentium 4 (otherwise edit
 #accordingly) FARGO_ARCH must be set to INTEL (sequential only, MPI
 #identical to generic IA32)
-CC_INTEL  = icc
+CC_INTEL  = gcc
 OPT_INTEL = 
 OPTSEQ_INTEL = -O3 -tpp7 -ipo -unroll -w2 -Wall -wd1418,310,266,810,1419,981,161 
 PARAOPT_INTEL = -O3 -march=pentium3 -Wall -ffast-math

@@ -206,9 +206,9 @@ void AlgoGas (force, Rho, Vrad, Vtheta, Energy, Label, sys)
       // ** H2O ** Planet mass increase gradually //
       //ImprovingPlanetsMass (Rho, Vrad, Vtheta, dt, sys);
       // **  ** //
-      AccreteOntoBinary (Rho, Vrad, Vtheta, dt, sys);
       //AccreteOntoPlanets (Rho, Vrad, Vtheta, dt, sys);
       // H2O ** Accrete into binary
+      AccreteOntoBinary (Rho, Vrad, Vtheta, dt, sys);
       // ** **
     }
     dtemp += dt;

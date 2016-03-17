@@ -39,7 +39,7 @@
 #include <unistd.h>
 #include <string.h>
 #ifndef __ppc__
-#include <malloc/malloc.h>
+#include <malloc.h>
 #endif
 #ifdef _TRAP_FPE
 #include <signal.h>

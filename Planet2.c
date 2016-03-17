@@ -152,14 +152,14 @@ void AccreteOntoBinary (Rho, Vrad, Vtheta, dt, sys)
       Rplanet = sqrt(Xplanet*Xplanet+Yplanet*Yplanet);
       //roche = pow((massra*Mplanet/(3.0*msr)),(1.0/3.0))*Rplanet;
 	  // ** H2O change raletice hill radius
-      if (massra < 2.0) {
-	RRoche = pow((msr/massra),(1.0/3.0))*0.462*spr; 
+      if (k == 1) {
+	RRoche = pow((1.0/massra),(1.0/3.0))*0.462*spr; 
       }
-      if (massra > 2.0) {
+      if (k == 0) {
 	RRoche = pow((1.0/massra),(1.0/3.0))*0.462*spr; 
 	RRoche = spr - RRoche;
       }
-      RRoche = RRoche*0.5;
+      //RRoche = RRoche*0.5;
 	  // ** H2O done
       /* Central mass is 1.0 */
       i_min=0;
@@ -216,7 +216,7 @@ void AccreteOntoBinary (Rho, Vrad, Vtheta, dt, sys)
       }
       sys->mass[k] = Mplanet;
     }
-    msr = 1.0/msr;
+      //msr = 1.0/msr;
   }
 }
 
